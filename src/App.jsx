@@ -41,10 +41,14 @@ import BusinessPage from "./components/BusinessPage";
 import StatisticsPage from "./components/StatisticsPage";
 import TravelfreePage from "./components/Travelfree";
 import BookingHotel from "./client/hotel/booking/bookingHotel";
+import { useEffect } from "react";
 // import HotPage from './components/HotPage'
 
 function App() {
   const location = useLocation();
+  useEffect(() => {
+    console.log("Current path:", location.pathname);
+  }, [location]);
 
   return (
     <>
@@ -109,11 +113,11 @@ function App() {
           <Route path="booking" element={<BookingHotel />}></Route>
         </Route>
 
-        <Route path="food">
+        <Route path="/food">
           <Route path="" element={<FoodPage />}></Route>
           {/* <Route path="detail" element={<DetailFood />} />          */}
         </Route>
-        <Route path="transport">
+        <Route path="/transport">
           <Route path="" element={<TransportPage />}></Route>
           <Route path="item" element={<FlightItemPage />}></Route>
         </Route>

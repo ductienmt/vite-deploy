@@ -26,7 +26,7 @@ const RoomCard = () => {
               </small>
             </p>
             <span>200.000 VNĐ / 1 đêm</span>
-            <Link to="/hotel/booking">Đặt ngay</Link>
+            <Link to={"../booking"}>Đặt ngay</Link>
           </div>
         </div>
         <div className="card-room-type align-items-center">
@@ -47,7 +47,7 @@ const RoomCard = () => {
               </small>
             </p>
             <span>300.000 VNĐ / 1 đêm</span>
-            <Link to="/hotel/booking">Đặt ngay</Link>
+            <Link to={"../booking"}>Đặt ngay</Link>
           </div>
         </div>
         <div className="card-room-type align-items-center">
@@ -70,7 +70,7 @@ const RoomCard = () => {
               </small>
             </p>
             <span>400.000 VNĐ / 1 đêm</span>
-            <Link to={"./booking"}>Đặt ngay</Link>
+            <Link to={"../booking"}>Đặt ngay</Link>
           </div>
         </div>
       </div>

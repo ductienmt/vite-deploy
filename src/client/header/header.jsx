@@ -22,19 +22,19 @@ function Header() {
 
         <ul className={`nav-menu ${clicked ? "active" : ""}`}>
           <li>
-            <Link to="/transport" className="nav-links">
+            <Link to="transport" className="nav-links">
               <i className="fa-solid fa-plane"></i>
               Phương tiện
             </Link>
           </li>
           <li>
-            <Link to="/hotel" className="nav-links">
+            <Link to="hotel" className="nav-links">
               <i className="fa-solid fa-hotel"></i>
               Khách sạn
             </Link>
           </li>
           <li>
-            <Link to="/food" className="nav-links">
+            <Link to="food" className="nav-links">
               <i className="fa-solid fa-utensils"></i>
               Hàng quán
             </Link>
